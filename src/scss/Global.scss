@@ -1,0 +1,50 @@
+$color_black: #000;
+$color_white: #fff;
+
+$padding: 1rem;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: $color_black;
+    color: $color_white;
+    display: flex;
+    > #root {
+        display: flex;
+        flex: 1 1 auto;
+        > .App{
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            > header{
+                padding: $padding;
+            }
+            > section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: $padding;
+                > p {
+                    padding: $padding;
+                }
+                > .counter{
+                    font-size: 100pt;
+                }
+                > .button{
+                    padding: .5rem $padding;
+                    background-color: rgb(68, 99, 195);
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
